@@ -113,6 +113,7 @@
     if (e.shiftKey && this.checked) {
       // go ahead and do what we please
       // loop every single checkbox
+      // the checked bottom one is check by click ,not by `checkbox.checked = true;`
       checkboxes.forEach(checkbox => {
         
         if (checkbox === this || checkbox === lastChecked) {
